@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipKart</title>
+
+     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+   <body>
+       <header>
+            <h3>Amazon</h3>
+       </header>    
+
+       <div class="container">
+           <div class="row">
+              <div class="col-md-8  offset-md-3 mt-4" >
+                  <div class="card">
+                     <div class="card-header bg-primary text-center">
+                          <h4 class="text-light "> Shoping Cart</h4>
+                     </div>
+                    <div class="card-body">
+                        <form action="" id="productForm">
+                            <div class="form-group">
+                              <label for="title">Title<span class="text-danger">*</span></label>
+                              <input type="text" required class="form-control" id="title">
+                            </div>
+       
+                            <div class="form-group">
+                              <label for="description">Description<span class="text-danger">*</span></label>
+                              <textarea rows="4" class="form-control" id="description">
+                               </textarea>
+                            </div>
+                              
+                            <div class="form-group">
+                               <label for="price">Price<span class="text-danger">*</span></label>
+                               <input type="number" required class="form-control" id="price">
+                            </div>
+                                
+                            <div class="form-group">
+                               <label for="image">Product image<span class="text-danger">*</span></label>
+                               <input type="url"  required class="form-control" id="image">
+                            </div>
+
+                            <div class="form-group">
+                                <button class="btn btn-block btn-outline-primary" id="addProduct"><i class="fa-solid fa-plus"></i> Add Product</button>
+                                <button class="btn btn-block btn-outline-primary d-none" id="updateProduct" type="button"><i class="fa-solid fa-plus"></i> Update Product</button>
+                                 
+                            </div>
+                        </form>
+                           
+                          
+                    </div>
+                 </div> 
+
+
+              </div>
+           </div>     
+    </div>
+
+
+
+
+
+
+
+
+   <div class="container-fluid">
+          <div class="row" id="productContainer">
+         
+            <!-- <div class="col-md-4 mb-4 mt-4">
+                <div class="card productCard">
+                    <div class="card-header bg-primary text-light text-center">
+                          <h4>Product</h4>
+                    </div>
+                      <div class="card-body">
+                        <figure>
+                             <img src="image" alt="">
+                            <figcaption>
+                               <h4>Title</h4>
+                                <h6>description:</h6>
+                                <h4><span class="bg-primary">price$</span></h4>   
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="card-footer d-flex justify-content-between ">
+                        <button class="btn btn-inline-block btn-outline-primary">Edit</button>
+                        <button class="btn btn-inline-block btn-outline-warning">Remove</button>
+                        
+                    </div>
+                </div>
+
+            </div> -->
+         
+        </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="spinner d-none" id="spinner">
+                <div class="spinner-grow text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+ 
+
+
+
+
+<!--           
+        <footer>
+                
+        </footer> -->
+      
+
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+        <script src="./assets/js/app.js"></script>
+
+
+
+  </body>
+</html>

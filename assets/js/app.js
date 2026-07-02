@@ -147,6 +147,7 @@ function onSubmit(eve){
 
     .then((data)=>{
         createSingleCard(data);
+        snackbar('product created successfully..', 'success');
     })
 
     .catch((err)=>{ 
